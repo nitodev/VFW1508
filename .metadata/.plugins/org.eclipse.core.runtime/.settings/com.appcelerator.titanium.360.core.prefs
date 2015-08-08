@@ -1,0 +1,4 @@
+UserName=nito@nitodev.com
+UserOrgs={"100055383"\:{"org_id"\:100055383,"name"\:"nitonitodevcom","_id"\:"55c10d4f7b36cea77818b6b8","guid"\:"4e10a645-9532-4ded-85f5-476c4390f9f0","user_count"\:1,"current_users_role"\:"admin","is_node_acs_admin"\:true,"created"\:"2015-08-04T19\:06\:54.981Z","reseller"\:false,"active"\:true,"package"\:"free","envs"\:[{"_id"\:"production","name"\:"production","isProduction"\:true,"acsBaseUrl"\:"https\://api.cloud.appcelerator.com","acsAuthBaseUrl"\:"https\://secure-identity.cloud.appcelerator.com","nodeACSEndpoint"\:"https\://admin.cloudapp-enterprise.appcelerator.com"},{"_id"\:"development","name"\:"development","isProduction"\:false,"acsBaseUrl"\:"https\://api.cloud.appcelerator.com","acsAuthBaseUrl"\:"https\://secure-identity.cloud.appcelerator.com","nodeACSEndpoint"\:"https\://admin.cloudapp-enterprise.appcelerator.com"}]}}
+eclipse.preferences.version=1
+previousDashboardEndpoint=https\://platform.appcelerator.com
