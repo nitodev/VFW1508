@@ -1,0 +1,33 @@
+Logger started at: Saturday, August 8, 2015 4:03:26 PM EDT
+Component: com.appcelerator.titanium.ios.core
+Version: 1.0.0.1436203487
+[3:26.245] Sent: >21*1439064206242*version<
+[3:26.246] Recv: >1439064206242*2*4.1.0<
+[3:26.248] Sent: >20*1439064206243*update<
+[3:26.248] Recv: >1439064206243*3.6.0<
+[3:26.249] Sent: >45*1439064206244*option*stepFiltersEnabled*false<
+[3:26.250] Recv: >1439064206244<
+[3:26.250] Sent: >36*1439064206245*option*monitorXHR*true<
+[3:26.250] Recv: >1439064206245<
+[3:26.251] Sent: >45*1439064206246*option*suspendOnFirstLine*false<
+[3:26.251] Recv: >1439064206246<
+[3:26.251] Sent: >46*1439064206247*option*suspendOnExceptions*false<
+[3:26.252] Recv: >1439064206247<
+[3:26.252] Sent: >41*1439064206248*option*suspendOnErrors*true<
+[3:26.252] Recv: >1439064206248<
+[3:26.253] Sent: >43*1439064206249*option*suspendOnKeywords*true<
+[3:26.253] Recv: >1439064206249<
+[3:26.253] Sent: >45*1439064206250*option*bypassConstructors*false<
+[3:26.254] Recv: >1439064206250<
+[3:26.254] Sent: >45*1439064206251*option*stepFiltersEnabled*false<
+[3:26.254] Recv: >1439064206251<
+[3:26.254] Sent: >30*1439064206252*detailFormatters<
+[3:26.255] Recv: >1439064206252<
+[3:26.255] Sent: >20*1439064206253*enable<
+[3:26.255] Recv: >1439064206253<
+[3:26.283] Recv: >threads*created*0*kroll$1<
+[3:26.303] Recv: >log*out*[DEBUG] Loading: /Users/Naito/Library/Developer/CoreSimulator/Devices/FAE407C2-5972-49F6-B133-717A70001A6A/data/Containers/Bundle/Application/914A54ED-C173-4087-B280-5DA3257C3CDE/Ito_Nowa_Project1.app/app.js, Resource: app_js<
+[3:26.307] Recv: >scripts*created*1|app:/app.js||1|7<
+[3:26.308] Recv: >resumed*0*started<
+[3:26.311] Recv: >log*out*[DEBUG] Application booted in 125.489056 ms<
+----------End of file----------

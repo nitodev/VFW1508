@@ -1,0 +1,35 @@
+var food = ["Sushi", "Curry", "Steak", "Spaghetti", "Pizza"];
+
+var buttonView2
+var changeView = function(){
+	buttonView = Ti.UI.createView({
+		height: 50,
+		width: 75,
+		left: 20,
+		borderRadius: 5,
+		top: 330,
+		color: "blue"
+	})
+	buttonView2 = Ti.UIcreateView({
+		height: 50,
+		width: 75,
+		right: 20,
+		borderRadius: 5,
+		top: 330,
+		color: "blue"
+	})
+}
+buttonView.addEventListener("click", changeView);
+
+
+
+
+
+
+
+/*
+var changeText = function(){
+	textLabel.text = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
+}
+buttonView.addEventListener("click", changeText);
+*/

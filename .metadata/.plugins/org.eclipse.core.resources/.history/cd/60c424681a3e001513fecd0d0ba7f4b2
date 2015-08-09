@@ -1,0 +1,15 @@
+var food = ["Sushi", "Curry", "Steak", "Spaghetti", "Pizza"];
+
+
+
+
+
+
+
+
+/*
+var changeText = function(){
+	textLabel.text = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
+}
+buttonView.addEventListener("click", changeText);
+*/

@@ -1,0 +1,42 @@
+Ti.UI.setBackgroundColor("#000");
+
+var window = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+});
+window.open();
+
+var view = Ti.UI.createView({
+	backgroundColor: "#000000",
+	borderRadius: 5,
+	borderWidth: 1,
+	width: 200,
+	height: 150
+});
+window.add(view);
+
+var textLabel = Ti.UI.createLabel({
+	text: "Love food? Let's talk about it...",
+	color: "#fff",
+	font: {fontSize: 14, fontFamily: "Courier"},
+	textAlign: "center"
+});
+view.add(textLabel);
+
+var buttonView = Ti.UI.createView({
+	backgroundColor: "blue",
+	width: 200,
+	height: 50,
+	borderRadius: 5,
+	top: 330
+});
+window.add(buttonView);
+
+var buttonText = Ti.UI.createLabel({
+	color: "white",
+	font: {fontSize: 10, fontFamily: "Courier"},
+	textAlign: "center",
+	text: "Click Me!"
+});
+buttonView.add(buttonText);
+
+var loadFile = require("relev");

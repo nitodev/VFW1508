@@ -1,0 +1,7 @@
+Ti.UI.setBackgroundColor("#000");
+
+var window = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+});
+
+window.open();
