@@ -7,7 +7,7 @@ var nextButton = Ti.UI.createView({
     right: 20,
     borderRadius: 5,
     top: 330,
-    color: "blue"
+    backgroundColor: "blue"
 });
 var previousButton = Ti.UI.createView({
 	height: 50,
@@ -15,7 +15,7 @@ var previousButton = Ti.UI.createView({
     left: 20,
     borderRadius: 5,
     top: 330,
-    color: "blue"
+    backgroundColor: "blue"
 });
 
 var nextLabel = Ti.UI.createLabel({
@@ -33,14 +33,13 @@ var prevLabel = Ti.UI.createLabel({
 });
 
 var changeButton = function(){
-	nextButton.add(nextLabel);
-	previousButton.add(prevLabel);
 	buttonView.hide();
-	textLabel = hide();
-	buttonText = hide();
+	textLabel = "";
+	buttonText = "";
 };
 
 buttonView.addEventListener("click", changeButton);
 
-
+nextButton.add(nextLabel);
+previousButton.add(prevLabel);
 
