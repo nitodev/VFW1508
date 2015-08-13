@@ -1,0 +1,12 @@
+var newWindow = Ti.UI.createWindow({
+	backgroundColor: "#ffffff"
+});
+
+var finaleView = Ti,UI,createView({
+	width: mainView.width,
+	height: preButton.width,
+	backgroundColor: "#E3580D",
+	borderRadius: 5,
+	borderWidth: 1,
+	top: 380
+});
