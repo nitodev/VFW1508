@@ -50,13 +50,13 @@ function adding(){
 function left(){
 	i--;
 	if (i < 0){
-		i = 4;
+		i = food.length - 1;
 	};
 	textLabel.text = food[i];
 };
 function right(){
 	i++;
-	if (i > 4){
+	if (i > food.length - 1){
 		i = 0;
 	}; 
 	textLabel.text = food[i];
