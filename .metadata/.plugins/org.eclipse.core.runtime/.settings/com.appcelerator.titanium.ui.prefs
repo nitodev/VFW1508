@@ -1,7 +1,9 @@
 =run
 Ito_Nowa_Project1\:launchMode=run
 Ito_Nowa_Project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.FAE407C2-5972-49F6-B133-717A70001A6A
-LAST_LAUNCH_TIMESTAMP=1439589680176
+Ito_Nowa_Project2\:launchMode=run
+Ito_Nowa_Project2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.399F26B0-F897-401F-B301-FAA7889B239A
+LAST_LAUNCH_TIMESTAMP=1439619351538
 eclipse.preferences.version=1
 preference.show.console.onError=false
 preference.studio.perspective.version=103
