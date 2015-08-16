@@ -1,0 +1,21 @@
+var os = [
+	{title: "iOS", description: "iOS, short for iPhone Operating System is based on Apple\'s operating system, powered by Apple\'s hardware."},
+	{title: "Android, description: Android is bought by Google, running on variety of different hardwares manufactured by different companies."},
+	{title: "Windows", description: "Windows mobile OS is made by Microsoft, running on a handful of devices."}
+];
+
+var hardware = [
+	{title: "Apple", description: "Apple\'s phones focus on elegence and beautfil design for the best experience."},
+	{title: "Samsung", description: "Samsung\'s phones used to be made with cheap plastic, followed by similar approach of Apple recently."},
+	{title: "Sony", description: "Sony\'s phones are great quality, but mostly popular in the East."},
+	{title: "HTC", description: "HTC\'s phones are made with aluminum body, providing sleek looks and feel."}
+];
+
+var showOS = Ti.UI.createTableView({
+	data: os,
+	color: "#fff",
+	height: 150
+	
+});
+
+showOS.setData(os);
