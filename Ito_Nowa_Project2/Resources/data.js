@@ -16,10 +16,6 @@ var smartphoneTable = Ti.UI.createTableView({
 });
 mainWindow.add(smartphoneTable);
 
-var smartphoneSections = [osSection, hardwareSection];
-smartphoneTable.setData(smartphoneSections);
-
-
 //custom footers for first row
 var osFooterView = Ti.UI.createView();
 var osFooterText = Ti.UI.createLabel({
@@ -127,3 +123,6 @@ for (var i = 0, h = hardware.length; i<h; i++){
 	hardwareSection.add(secondRow);
 	secondRow.addEventListener("click", info);
 };
+
+var smartphoneSections = [osSection, hardwareSection];
+smartphoneTable.setData(smartphoneSections);
