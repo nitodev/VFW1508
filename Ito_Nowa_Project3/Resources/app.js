@@ -1,7 +1,7 @@
 Ti.UI.backgroundColor = "fff";
 
 var mainWindow = Ti.UI.createWindow({
-	backgroundColor: "7f7f7f",
+	backgroundColor: "7f7f7f"
 	//layout: "horizontal"
 });
 
