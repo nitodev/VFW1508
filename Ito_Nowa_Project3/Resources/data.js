@@ -47,9 +47,15 @@ var getDetail = function(sauce){
 		width: "100%",
 		color: "fff"
 	});
+	var newBorder = Ti.UI.createView({ // old one cannot be added because line 60 closes it for mainWindow
+		top: 20,
+		width: "100%",
+		height: 1,
+		backgroundColor: "fff"
+	});
 	newWindow.open();
 	closeButton.add(closeLabel);
-	newWindow.add(title, border, fullPicture, closeButton);
+	newWindow.add(title, newBorder, fullPicture, closeButton);
 	closeButton.addEventListener("click", function(close){
 		newWindow.close();
 	});
