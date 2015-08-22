@@ -1,0 +1,24 @@
+Ti.UI.backgroundColor = "fff";
+
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "7f7f7f",
+});
+
+var border = Ti.UI.createView({
+	top: 20,
+	width: "100%",
+	height: 3,
+	backgroundColor: "fff"
+});
+
+var button = Ti.UI.createView({
+	height: 45,
+	left: 45,
+	right: 45,
+	backgroundColor: "fff",
+	borderRadius: 5
+});
+
+mainWindow.open();
+mainWindow.add(border);
+

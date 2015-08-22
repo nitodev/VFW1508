@@ -1,0 +1,34 @@
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var itemCount = 30;
+var rowCount = 4;
+var margin = 10;
+var size = (pWidth - margin) / 4;
+
+button.addEventListener("click", refresh);
+
+function refresh(){
+	button.hide();
+	buttonLabel.text = null;
+};
+
+var viewContainer = Ti.UI.createView({
+	width: pWidth,
+	backgroundColor: "fef",
+	layout: "horizontal"
+});
+
+for (var i = 0; i < itemCount; i++){
+	var view = Ti.UI.createView({
+		backgroundColor: "3f3f3f",
+		top: border.top + margin,
+		left: margin,
+		width: size,
+		height: size
+	});
+	var text = Ti.UI.createLabel({text: i+1, color: "fff"});
+	view.add(text);
+
+}
+
+mainWindow.add(viewContainer);
