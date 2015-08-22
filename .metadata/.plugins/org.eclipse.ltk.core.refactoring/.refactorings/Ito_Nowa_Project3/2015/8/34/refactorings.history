@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;data.js&apos; to &apos;Resources&apos;" description="Move &apos;data.js&apos; to &apos;Resources&apos;" destination="Resources" element1="Resources/iphone/data.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1440204946625" updateReferences="true"/>
+</session>
