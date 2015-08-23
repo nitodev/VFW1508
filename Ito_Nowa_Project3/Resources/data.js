@@ -2,11 +2,9 @@ var imgsFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "imgs")
 var imgs = imgsFolder.getDirectoryListing();
 //console.log(imgs);
 
-
 var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
 //console.log(pHeight); //480
-//var itemCount = 30;
 var rowCount = 4;
 var margin = 10;
 var size = (pWidth - margin*(rowCount + 1)) / rowCount;
@@ -21,13 +19,6 @@ var viewContainer = Ti.UI.createScrollView({
 	top: border.height + border.top,
 });
 
-
-var newBorder = Ti.UI.createView({
-	top: 20,
-	width: "100%",
-	height: 1,
-	backgroundColor: "fff"
-});
 var closeButton = Ti.UI.createView({
 	height: 50,
 	width: "100%",
@@ -42,9 +33,11 @@ var closeLabel = Ti.UI.createLabel({
 });
 closeButton.add(closeLabel);
 
+var detailWindow = Ti.UI.createWindow({backgroundColor: "7f7f7f"});
+var newWindow = Ti.UI.createWindow({backgroundColor: "7f7f7f"});
+
 
 var getDetail = function(sauce){
-	var detailWindow = Ti.UI.createWindow({backgroundColor: "7f7f7f"});
 	var title = Ti.UI.createLabel({
 		text: sauce.title,
 		color: "fff",
@@ -58,16 +51,13 @@ var getDetail = function(sauce){
 		width: "100%",
 	});
 	detailWindow.open();
-	detailWindow.add(title, newBorder, fullPicture, closeButton);
+	detailWindow.add(title, border, fullPicture, closeButton);
 	closeButton.addEventListener("click", function(){
 		detailWindow.close();
 	});
 };
 
 function refresh(){
-	var newWindow = Ti.UI.createWindow({
-		backgroundColor: "7f7f7f"
-	});
 	for (var i = 0; i < imgs.length; i++){
 		var view = Ti.UI.createView({
 			backgroundColor: "3f3f3f",
@@ -83,19 +73,23 @@ function refresh(){
 			width: view.width*2,
 			title: imgs[i]
 		});
-		newWindow.open();
+		p = 0;
+		//
 		view.add(thumb);
-		viewContainer.add(view);
-		newWindow.add(viewContainer, newBorder, closeButton);
-		closeButton.addEventListener("click", function(){
-			newWindow.close();
-		});
+		if (p<1){
+			viewContainer.add(view);
+		};
+		p++;
+		//
 		thumb.addEventListener("click", function(event){
 			getDetail(event.source);
-			//console.log(event.source.title);
 		});
 	};
 	view.bottom = margin + 50;
+	newWindow.open();
+	newWindow.add(viewContainer, border, closeButton);
+	closeButton.addEventListener("click", function(){
+		newWindow.close();
+	});
 };
-
 
