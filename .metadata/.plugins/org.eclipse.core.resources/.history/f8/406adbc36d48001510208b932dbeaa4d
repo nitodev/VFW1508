@@ -1,7 +1,0 @@
-
-button.addEventListener("click", refresh);
-
-function refresh(){
-	button.hide,
-	buttonLabel.null
-};

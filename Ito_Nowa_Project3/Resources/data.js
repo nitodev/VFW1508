@@ -9,8 +9,6 @@ var rowCount = 4;
 var margin = 10;
 var size = (pWidth - margin*(rowCount + 1)) / rowCount;
 
-button.addEventListener("click", refresh);
-
 var viewContainer = Ti.UI.createScrollView({
 	width: pWidth,
 	contentWidth: pWidth,
@@ -36,6 +34,39 @@ closeButton.add(closeLabel);
 var detailWindow = Ti.UI.createWindow({backgroundColor: "7f7f7f"});
 var newWindow = Ti.UI.createWindow({backgroundColor: "7f7f7f"});
 
+button.addEventListener("click", refresh);
+
+function refresh(){
+	for (var i = 0; i < imgs.length; i++){
+		var view = Ti.UI.createView({
+			backgroundColor: "3f3f3f",
+			top: margin,
+			left: margin,
+			width: size,
+			height: size,
+			borderRadius: 3,
+			bottom: 0
+		});
+		var thumb = Ti.UI.createImageView({
+			image: "imgs/" + imgs[i],
+			width: view.width*2,
+			title: imgs[i]
+		});
+		view.add(thumb);
+		viewContainer.add(view);
+		thumb.addEventListener("click", function(event){
+			getDetail(event.source);
+		});
+	};
+	view.bottom = margin + 50;
+	newWindow.open();
+	newWindow.add(viewContainer, border, closeButton);
+	closeButton.addEventListener("click", function(){
+		newWindow.close();
+	});
+};
+
+
 
 var getDetail = function(sauce){
 	var title = Ti.UI.createLabel({
@@ -56,40 +87,3 @@ var getDetail = function(sauce){
 		detailWindow.close();
 	});
 };
-
-function refresh(){
-	for (var i = 0; i < imgs.length; i++){
-		var view = Ti.UI.createView({
-			backgroundColor: "3f3f3f",
-			top: margin,
-			left: margin,
-			width: size,
-			height: size,
-			borderRadius: 3,
-			bottom: 0
-		});
-		var thumb = Ti.UI.createImageView({
-			image: "imgs/" + imgs[i],
-			width: view.width*2,
-			title: imgs[i]
-		});
-		p = 0;
-		//
-		view.add(thumb);
-		if (p<1){
-			viewContainer.add(view);
-		};
-		p++;
-		//
-		thumb.addEventListener("click", function(event){
-			getDetail(event.source);
-		});
-	};
-	view.bottom = margin + 50;
-	newWindow.open();
-	newWindow.add(viewContainer, border, closeButton);
-	closeButton.addEventListener("click", function(){
-		newWindow.close();
-	});
-};
-
